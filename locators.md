@@ -22,6 +22,8 @@ NODE -> //tagName[@attibute='value']
 
 //tagName[text()='textValue']
 
+//tagName[contains(@attibute,'partialValue')]
+
 //tagName[contains(text(),'partialTextValue')]
 
 //tagName[contains(.,'partialTextValue')]
