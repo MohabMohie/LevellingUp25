@@ -3,6 +3,7 @@ package fluentPOM.google;
 import fluentPOM.selenium.WebDriverDocs;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.testng.Assert;
 
 public class Results {
     WebDriver driver;
@@ -19,5 +20,9 @@ public class Results {
     public WebDriverDocs clickFirstSearchResult() {
         driver.findElement(firstSearchResult_Label).click();
         return new WebDriverDocs(driver);
+    }
+
+    public void assertFirstSearchResultText(String webDriver) {
+        Assert.assertEquals(getFirstSearchResultText(), "WebDriver");
     }
 }

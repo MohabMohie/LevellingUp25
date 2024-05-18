@@ -20,6 +20,9 @@ public class GoogleSearchPOMFluentTest {
                 .search("selenium webdriver")
                 .getFirstSearchResultText();
         Assert.assertEquals(firstSearchResultText, "WebDriver");
+//        new Search(driver).navigate()
+//                .search("selenium webdriver")
+//                .assertFirstSearchResultText("WebDriver");
     }
 
     @Test
